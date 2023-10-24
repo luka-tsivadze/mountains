@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unknown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemain.css">
+    
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+
+            <ul>
+                <li>
+                    <img class="NavIcon" src="icons/Vector 1nav.png" alt="">
+                </li>
+
+
+                <li>
+                    <h4 href="" class="active">Home</h4>
+                    <h4 href="" class="NavText">Mountains</h4>
+                    <h4 href="" class="NavText">My Trips</h4>
+                    <h4 href="" class="NavText">Contact</h4>
+                </li>
+            </ul>
+        </nav>
+        <div class="HeaderMain">
+            <div class="HLeft">
+                <h3>Experience the incredible trips to the Mountains</h3>
+                <button>BOOK NOW</button>
+            </div>
+
+            <div class="HRight">
+                <img class="TopIcon" src="photos/GroupHeaderCircle.png" alt="">
+                <img class="BottomIcon" src="photos/Group 5HeaderCards.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="HFooter">
+            <div class="location F">
+                <label for="input1">LOCATION</label>
+                <select id='input1'>
+                    <option >Everest</option>
+                    <option >.c.f.</option>
+                    <option >best</option>
+                  </select>
+                  
+            </div>
+            <div class="depart F">
+                <label href="dateInput" for="dateInput"> DEPART </label>
+                <div class="row">
+                    
+                    <input type="date" class="dateInput" placeholder=" " id="dateInput">
+                    <p id="result"></p>
+                </div>
+
+            </div>
+            <div class="passengers F">
+                <label for="input3">PASSENGERS</label>
+               <div class="row">
+                <input type="number" max="9" min="1"value='5'  id="input3" >
+                <label for="input3">Adult</label>
+               </div>
+            </div>
+            <button>
+                <img src="icons/Vectorloop.png" alt="search">
+            </button>
+        </div>
+    </header>
+    <!-- new css file stylemain -->
+    <main>
+    <h4>Discover Popular 
+       Mountains</h4>
+     <div class="row mainrow">
+        
+        <button class="actived btn">popular</button>
+        <button class=" btn">EUROPE</button>
+        <button class=" btn">ASIA</button>
+        <button class=" btn">NORTH AMERICA</button>
+        <button class=" btn">SOUTH AMERICA</button>
+        <button class=" btn">AFRICA</button>
+    
+    </div>
+    
+    <div id="card-container"></div>
+
+    </main>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="java/main.js"></script>
+<script src="java/main2.js"></script>
+</html>
